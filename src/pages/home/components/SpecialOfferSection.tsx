@@ -14,7 +14,7 @@ export default function SpecialOfferSection() {
         {/* セクション見出し */}
         <div className="text-center mb-10 sm:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            1人ひとりに合わせた<span className="text-teal-600">オーダーメイド設計</span>
+            1人ひとりに合わせた<span className="text-rose-500">オーダーメイド設計</span>
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
             一人ひとりの体質・生活習慣は異なります。<br />
@@ -24,18 +24,18 @@ export default function SpecialOfferSection() {
         </div>
 
         {/* 遺伝子検査キット訴求ブロック */}
-        <div className="bg-gradient-to-br from-teal-50 to-teal-100/50 rounded-2xl p-6 sm:p-8 md:p-10 mb-8 border border-teal-200">
+        <div className="bg-gradient-to-br from-rose-50 to-rose-100/50 rounded-2xl p-6 sm:p-8 md:p-10 mb-8 border border-rose-200">
           <div className="grid md:grid-cols-2 gap-6 items-center">
             <div>
               <div className="flex items-start gap-3 mb-4">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-teal-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-rose-500 rounded-xl flex items-center justify-center flex-shrink-0">
                   <i className="ri-test-tube-line text-xl sm:text-2xl text-white"></i>
                 </div>
                 <div>
                   <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
                     遺伝子検査で体質を把握
                   </h3>
-                  <div className="inline-block bg-teal-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                  <div className="inline-block bg-rose-500 text-white text-xs font-bold px-3 py-1 rounded-full">
                     スタンダードプラン / プレミアムプラン限定
                   </div>
                 </div>
@@ -47,24 +47,24 @@ export default function SpecialOfferSection() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6">
                 <div className="flex items-center gap-3 bg-white rounded-lg p-3 sm:p-4">
-                  <i className="ri-scales-3-line text-xl sm:text-2xl text-teal-600"></i>
+                  <i className="ri-scales-3-line text-xl sm:text-2xl text-rose-500"></i>
                   <span className="text-sm sm:text-base text-gray-800 font-medium">太りやすさの傾向</span>
                 </div>
                 <div className="flex items-center gap-3 bg-white rounded-lg p-3 sm:p-4">
-                  <i className="ri-apple-line text-xl sm:text-2xl text-teal-600"></i>
+                  <i className="ri-apple-line text-xl sm:text-2xl text-rose-500"></i>
                   <span className="text-sm sm:text-base text-gray-800 font-medium">栄養素への反応傾向</span>
                 </div>
                 <div className="flex items-center gap-3 bg-white rounded-lg p-3 sm:p-4">
-                  <i className="ri-heart-pulse-line text-xl sm:text-2xl text-teal-600"></i>
+                  <i className="ri-heart-pulse-line text-xl sm:text-2xl text-rose-500"></i>
                   <span className="text-sm sm:text-base text-gray-800 font-medium">筋肉のつきやすさ</span>
                 </div>
                 <div className="flex items-center gap-3 bg-white rounded-lg p-3 sm:p-4">
-                  <i className="ri-refresh-line text-xl sm:text-2xl text-teal-600"></i>
+                  <i className="ri-refresh-line text-xl sm:text-2xl text-rose-500"></i>
                   <span className="text-sm sm:text-base text-gray-800 font-medium">リバウンドしやすさの傾向</span>
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl p-4 sm:p-6 border-l-4 border-teal-600">
+              <div className="bg-white rounded-xl p-4 sm:p-6 border-l-4 border-rose-500">
                 <p className="text-sm sm:text-base text-gray-800 leading-relaxed">
                   検査結果をもとに、遺伝子タイプに基づいた完全オリジナルの食事・運動プログラムを作成します。
                 </p>
@@ -121,27 +121,27 @@ export default function SpecialOfferSection() {
                 <h4 className="text-base sm:text-lg font-bold text-gray-900 mb-4">取得する主なデータ：</h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div className="flex items-start gap-2">
-                    <i className="ri-check-line text-teal-600 text-lg flex-shrink-0 mt-0.5"></i>
+                    <i className="ri-check-line text-rose-500 text-lg flex-shrink-0 mt-0.5"></i>
                     <span className="text-sm sm:text-base text-gray-700">日常の活動量（歩数・運動量）</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <i className="ri-check-line text-teal-600 text-lg flex-shrink-0 mt-0.5"></i>
+                    <i className="ri-check-line text-rose-500 text-lg flex-shrink-0 mt-0.5"></i>
                     <span className="text-sm sm:text-base text-gray-700">消費カロリー</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <i className="ri-check-line text-teal-600 text-lg flex-shrink-0 mt-0.5"></i>
+                    <i className="ri-check-line text-rose-500 text-lg flex-shrink-0 mt-0.5"></i>
                     <span className="text-sm sm:text-base text-gray-700">睡眠時間・睡眠の質</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <i className="ri-check-line text-teal-600 text-lg flex-shrink-0 mt-0.5"></i>
+                    <i className="ri-check-line text-rose-500 text-lg flex-shrink-0 mt-0.5"></i>
                     <span className="text-sm sm:text-base text-gray-700">心拍数</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <i className="ri-check-line text-teal-600 text-lg flex-shrink-0 mt-0.5"></i>
+                    <i className="ri-check-line text-rose-500 text-lg flex-shrink-0 mt-0.5"></i>
                     <span className="text-sm sm:text-base text-gray-700">ストレスレベル</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <i className="ri-check-line text-teal-600 text-lg flex-shrink-0 mt-0.5"></i>
+                    <i className="ri-check-line text-rose-500 text-lg flex-shrink-0 mt-0.5"></i>
                     <span className="text-sm sm:text-base text-gray-700">女性の健康管理データ</span>
                   </div>
                 </div>
@@ -162,7 +162,7 @@ export default function SpecialOfferSection() {
         </div>
 
         {/* なぜ今だけなのか - 色味を最適化 */}
-        <div className="bg-gradient-to-br from-teal-600 to-teal-700 rounded-2xl p-6 sm:p-8 md:p-10 text-center">
+        <div className="bg-gradient-to-br from-rose-500 to-rose-600 rounded-2xl p-6 sm:p-8 md:p-10 text-center">
           <div className="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full mb-6">
             <i className="ri-gift-line text-white text-lg"></i>
             <span className="text-sm font-bold text-white">特別提供</span>
@@ -177,7 +177,7 @@ export default function SpecialOfferSection() {
 
           <div className="max-w-2xl mx-auto space-y-3 mb-6">
             <div className="flex items-center gap-3 bg-white/15 rounded-lg p-3 sm:p-4">
-              <i className="ri-check-line text-teal-200 text-xl flex-shrink-0"></i>
+              <i className="ri-check-line text-rose-200 text-xl flex-shrink-0"></i>
               <span className="text-sm sm:text-base text-white text-left">遺伝子検査キットの提供（スタンダード/プレミアムプラン）</span>
             </div>
             <div className="flex items-center gap-3 bg-white/15 rounded-lg p-3 sm:p-4">
@@ -185,12 +185,12 @@ export default function SpecialOfferSection() {
               <span className="text-sm sm:text-base text-white text-left">Xiaomi Smart Band 9 の提供（プレミアムプラン）</span>
             </div>
             <div className="flex items-center gap-3 bg-white/15 rounded-lg p-3 sm:p-4">
-              <i className="ri-check-line text-teal-200 text-xl flex-shrink-0"></i>
+              <i className="ri-check-line text-rose-200 text-xl flex-shrink-0"></i>
               <span className="text-sm sm:text-base text-white text-left">データを反映した専用設計プログラム</span>
             </div>
           </div>
 
-          <p className="text-xs sm:text-sm text-teal-100">
+          <p className="text-xs sm:text-sm text-rose-100">
             ※ プラン内容・料金自体は変わりません
           </p>
         </div>

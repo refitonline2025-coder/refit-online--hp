@@ -36,10 +36,10 @@ export default function ConcernsSection() {
       number: '04',
       title: '忙しくてジムに\n通う時間がない',
       desc: '仕事や家事で、まとまった時間を確保できない',
-      color: 'from-teal-50 to-cyan-50',
-      iconBg: 'bg-teal-100',
-      iconColor: 'text-teal-600',
-      numColor: 'text-teal-300',
+      color: 'from-rose-50 to-cyan-50',
+      iconBg: 'bg-rose-100',
+      iconColor: 'text-rose-500',
+      numColor: 'text-rose-200',
     },
     {
       icon: 'ri-user-unfollow-line',
@@ -68,9 +68,9 @@ export default function ConcernsSection() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         {/* ヘッダー */}
         <div className="text-center mb-14">
-          <p className="text-sm font-semibold text-teal-600 tracking-widest uppercase mb-3">Concerns</p>
+          <p className="text-sm font-semibold text-rose-500 tracking-widest uppercase mb-3">Concerns</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            こんな<span className="text-teal-600">お悩み</span>ありませんか？
+            こんな<span className="text-rose-500">お悩み</span>ありませんか？
           </h2>
           <p className="text-sm sm:text-base text-gray-500">一つでも当てはまるなら、ReFit Onlineがお力になれます</p>
         </div>

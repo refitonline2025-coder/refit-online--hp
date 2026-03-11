@@ -129,7 +129,7 @@ export default function PlanComparisonSection() {
     if (value) {
       return (
         <div className="flex items-center justify-center">
-          <div className="w-8 h-8 rounded-full bg-teal-500 flex items-center justify-center">
+          <div className="w-8 h-8 rounded-full bg-rose-400 flex items-center justify-center">
             <i className="ri-check-line text-white text-base"></i>
           </div>
         </div>
@@ -149,7 +149,7 @@ export default function PlanComparisonSection() {
       <div className="px-5">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            あなたに合った<span className="text-teal-500">プラン</span>を選ぼう
+            あなたに合った<span className="text-rose-400">プラン</span>を選ぼう
           </h2>
           <p className="text-lg text-gray-600">3つのプランから、あなたの目標に合わせてお選びいただけます</p>
         </div>
@@ -161,7 +161,7 @@ export default function PlanComparisonSection() {
               key={plan.name}
               className={`relative rounded-2xl overflow-hidden transition-all duration-300 ${
                 plan.popular
-                  ? 'shadow-2xl border-2 border-teal-400 md:scale-105 bg-white order-first md:order-none'
+                  ? 'shadow-2xl border-2 border-rose-300 md:scale-105 bg-white order-first md:order-none'
                   : plan.premium
                   ? 'shadow-xl border-2 border-orange-400 bg-white hover:shadow-2xl order-last md:order-none'
                   : 'shadow-lg border border-gray-100 bg-white hover:shadow-xl order-2 md:order-none'
@@ -186,7 +186,7 @@ export default function PlanComparisonSection() {
                   <div className="flex items-baseline gap-1 mb-1">
                     <span
                       className={`text-5xl font-bold ${
-                        plan.popular ? 'text-teal-600' : plan.premium ? 'text-orange-500' : 'text-gray-800'
+                        plan.popular ? 'text-rose-500' : plan.premium ? 'text-orange-500' : 'text-gray-800'
                       }`}
                     >
                       {plan.monthlyPrice}
@@ -203,7 +203,7 @@ export default function PlanComparisonSection() {
                       {feature.included ? (
                         <i
                           className={`ri-check-line text-lg flex-shrink-0 mt-0.5 ${
-                            plan.premium ? 'text-orange-500' : 'text-teal-600'
+                            plan.premium ? 'text-orange-500' : 'text-rose-500'
                           }`}
                         ></i>
                       ) : (
@@ -224,7 +224,7 @@ export default function PlanComparisonSection() {
                   rel="noopener noreferrer"
                   className={`block w-full text-center font-bold py-3.5 rounded-xl transition-all duration-300 whitespace-nowrap cursor-pointer text-sm ${
                     plan.popular
-                      ? 'bg-gradient-to-r from-teal-500 to-teal-600 text-white shadow-lg hover:from-teal-600 hover:to-teal-700 hover:shadow-xl'
+                      ? 'bg-gradient-to-r from-rose-400 to-rose-500 text-white shadow-lg hover:from-rose-500 hover:to-rose-600 hover:shadow-xl'
                       : plan.premium
                       ? 'bg-gradient-to-r from-orange-400 to-orange-500 text-white shadow-lg hover:from-orange-500 hover:to-orange-600 hover:shadow-xl'
                       : 'bg-gray-900 text-white hover:bg-gray-700'
@@ -245,8 +245,8 @@ export default function PlanComparisonSection() {
             <div className="px-4 py-5 text-center border-l border-gray-200">
               <span className="text-sm font-bold text-gray-700">ライトプラン</span>
             </div>
-            <div className="px-4 py-5 text-center border-l border-gray-200 bg-teal-50/60">
-              <span className="text-sm font-bold text-teal-600">スタンダードプラン</span>
+            <div className="px-4 py-5 text-center border-l border-gray-200 bg-rose-50/60">
+              <span className="text-sm font-bold text-rose-500">スタンダードプラン</span>
             </div>
             <div className="px-4 py-5 text-center border-l border-gray-200 bg-orange-50/60">
               <span className="text-sm font-bold text-orange-500">プレミアムプラン</span>
@@ -265,7 +265,7 @@ export default function PlanComparisonSection() {
               <div className="px-6 py-6 flex items-center gap-3">
                 {item.icon && (
                   <div className="w-5 h-5 flex items-center justify-center flex-shrink-0">
-                    <i className={`${item.icon} text-teal-500 text-base`}></i>
+                    <i className={`${item.icon} text-rose-400 text-base`}></i>
                   </div>
                 )}
                 <span className="text-sm font-medium text-gray-800">{item.feature}</span>
@@ -277,7 +277,7 @@ export default function PlanComparisonSection() {
               </div>
 
               {/* スタンダード */}
-              <div className="px-4 py-6 flex items-center justify-center border-l border-gray-100 bg-teal-50/30">
+              <div className="px-4 py-6 flex items-center justify-center border-l border-gray-100 bg-rose-50/30">
                 {renderCell(item.standard, 'standard')}
               </div>
 

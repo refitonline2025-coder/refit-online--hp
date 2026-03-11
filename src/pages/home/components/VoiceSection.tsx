@@ -67,12 +67,12 @@ export default function VoiceSection() {
   };
 
   return (
-    <section className="fade-in-up py-8 sm:py-10 bg-gradient-to-b from-teal-50 to-white">
+    <section className="fade-in-up py-8 sm:py-10 bg-gradient-to-b from-rose-50 to-white">
       <div className="px-4">
         <div className="text-center mb-6">
-          <p className="text-sm text-teal-600 font-medium mb-2">Voice</p>
+          <p className="text-sm text-rose-500 font-medium mb-2">Voice</p>
           <h2 className="text-4xl font-bold text-gray-900">
-            お客様の<span className="text-teal-600">声</span>
+            お客様の<span className="text-rose-500">声</span>
           </h2>
         </div>
 
@@ -144,7 +144,7 @@ export default function VoiceSection() {
                 className="w-12 h-12 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center cursor-pointer group"
                 aria-label="前へ"
               >
-                <i className="ri-arrow-left-s-line text-2xl text-gray-600 group-hover:text-teal-600"></i>
+                <i className="ri-arrow-left-s-line text-2xl text-gray-600 group-hover:text-rose-500"></i>
               </button>
 
               <div className="flex justify-center gap-1.5">
@@ -153,7 +153,7 @@ export default function VoiceSection() {
                     key={index}
                     onClick={() => setCurrentIndex(index)}
                     className={`w-2 h-2 rounded-full transition-all duration-300 cursor-pointer ${
-                      currentIndex === index ? 'bg-teal-600 w-6' : 'bg-gray-300'
+                      currentIndex === index ? 'bg-rose-500 w-6' : 'bg-gray-300'
                     }`}
                     aria-label={`スライド${index + 1}へ`}
                   ></button>
@@ -165,7 +165,7 @@ export default function VoiceSection() {
                 className="w-12 h-12 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center cursor-pointer group"
                 aria-label="次へ"
               >
-                <i className="ri-arrow-right-s-line text-2xl text-gray-600 group-hover:text-teal-600"></i>
+                <i className="ri-arrow-right-s-line text-2xl text-gray-600 group-hover:text-rose-500"></i>
               </button>
             </div>
           </div>
