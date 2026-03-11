@@ -155,7 +155,7 @@ export default function PlanComparisonSection() {
         </div>
 
         {/* プランカード - 3枚横並び */}
-        <div className="grid grid-cols-3 gap-6 mb-12 max-w-5xl mx-auto items-end">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-5xl mx-auto items-end">
           {plans.map((plan, index) => (
             <div
               key={index}

@@ -76,6 +76,25 @@ export default function HeroSection() {
               </div>
             </div>
           </div>
+
+          {/* CTAボタン */}
+          <div className="flex flex-col sm:flex-row gap-3 mt-8">
+            <a
+              href="https://lin.ee/F7dPZLD"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-teal-600 text-white font-bold px-8 py-4 rounded-full hover:bg-teal-700 transition-all duration-200 text-base shadow-xl hover:shadow-2xl whitespace-nowrap"
+            >
+              <i className="ri-chat-1-line text-xl"></i>
+              LINEで30秒ダイエット診断
+            </a>
+            <a
+              href="#plans"
+              className="inline-flex items-center justify-center bg-white/95 text-gray-800 font-bold px-8 py-4 rounded-full hover:bg-white transition-all duration-200 text-base shadow-lg border border-gray-200 whitespace-nowrap"
+            >
+              料金プランを見る
+            </a>
+          </div>
         </div>
       </div>
     </section>

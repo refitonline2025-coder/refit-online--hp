@@ -1,17 +1,15 @@
 import { useSEO } from '../../utils/seo';
 import HeroSection from './components/HeroSection';
 import CountdownBanner from '../../components/feature/CountdownBanner';
-import VoiceSection from './components/VoiceSection';
 import ConcernsSection from './components/ConcernsSection';
 import ResultSection from './components/ResultSection';
 import DifferenceSection from './components/DifferenceSection';
+import VoiceSection from './components/VoiceSection';
+import TrainerSection from './components/TrainerSection';
+import SpecialOfferSection from './components/SpecialOfferSection';
 import PlanComparisonSection from './components/PlanComparisonSection';
 import FlowSection from './components/FlowSection';
-import WorksSection from './components/WorksSection';
-import TrainerSection from './components/TrainerSection';
-import MessageSection from './components/MessageSection';
 import FaqSection from './components/FaqSection';
-import ReviewSection from './components/ReviewSection';
 import CtaBannerSection from './components/CtaBannerSection';
 
 export default function Home() {
@@ -105,18 +103,16 @@ export default function Home() {
     <div className="w-full bg-white">
       <HeroSection />
       <CountdownBanner />
-      <CtaBannerSection />
-      <VoiceSection />
       <ConcernsSection />
       <ResultSection />
       <DifferenceSection />
+      <VoiceSection />
+      <TrainerSection />
+      <SpecialOfferSection />
       <PlanComparisonSection />
       <FlowSection />
-      <WorksSection />
-      <TrainerSection />
-      <ReviewSection />
-      <MessageSection />
       <FaqSection />
+      <CtaBannerSection />
     </div>
   );
 }

@@ -25,17 +25,17 @@ export default function Footer() {
             href="https://www.instagram.com/taishi_refit_online?igsh=bHlkaGI5eDQ1ODFz&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 bg-teal-600 hover:bg-teal-700 rounded-full flex items-center justify-center transition-colors duration-200 cursor-pointer"
+            className="w-12 h-12 bg-teal-600 hover:bg-teal-700 rounded-full flex items-center justify-center transition-colors duration-200 cursor-pointer"
           >
-            <i className="ri-instagram-line text-lg text-white"></i>
+            <i className="ri-instagram-line text-xl text-white"></i>
           </a>
           <a
             href="https://lin.ee/F7dPZLD"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 bg-teal-600 hover:bg-teal-700 rounded-full flex items-center justify-center transition-colors duration-200 cursor-pointer"
+            className="w-12 h-12 bg-teal-600 hover:bg-teal-700 rounded-full flex items-center justify-center transition-colors duration-200 cursor-pointer"
           >
-            <i className="ri-line-line text-lg text-white"></i>
+            <i className="ri-line-line text-xl text-white"></i>
           </a>
         </div>
 
@@ -47,14 +47,6 @@ export default function Footer() {
             </a>
             <a href="/#faq" className="text-xs text-gray-500 hover:text-teal-700 transition-colors duration-200 whitespace-nowrap cursor-pointer">
               よくある質問
-            </a>
-            <a
-              href="https://readdy.ai/?ref=logo"
-              className="text-xs text-gray-500 hover:text-teal-700 transition-colors duration-200 whitespace-nowrap cursor-pointer"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Powered by Readdy
             </a>
           </div>
           <p className="text-center text-xs text-gray-500">

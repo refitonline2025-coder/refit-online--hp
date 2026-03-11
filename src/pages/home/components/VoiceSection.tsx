@@ -119,11 +119,6 @@ export default function VoiceSection() {
                             {review.comment}
                           </p>
 
-                          {/* プラン情報 */}
-                          <div className="mb-3 pb-3 border-b border-gray-100">
-                            <p className="text-xs text-teal-600 font-medium">{review.plan}</p>
-                          </div>
-
                           {/* ユーザー情報 */}
                           <div className="flex items-center gap-3">
                             <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${review.gender === 'male' ? 'bg-blue-100' : 'bg-pink-100'}`}>

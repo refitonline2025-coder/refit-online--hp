@@ -112,12 +112,11 @@ body {
     margin-right: 0 !important;
   }
 
-  /* グリッドレイアウトの完全制御 */
+  /* グリッドレイアウトの制御 */
   .grid {
     width: 100% !important;
     max-width: 100% !important;
     overflow-x: hidden !important;
-    grid-template-columns: 1fr !important;
   }
 
   /* Flexレイアウトの完全制御 */
