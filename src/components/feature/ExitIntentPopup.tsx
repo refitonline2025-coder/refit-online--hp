@@ -29,7 +29,7 @@ export default function ExitIntentPopup() {
   const handleClose = () => setIsVisible(false);
 
   const handleLineClick = () => {
-    window.open('https://lin.ee/F7dPZLD', '_blank');
+    window.open('https://line.me/R/ti/p/@refit-online', '_blank');
     setIsVisible(false);
   };
 
@@ -56,10 +56,10 @@ export default function ExitIntentPopup() {
 
         {/* ヘッダー */}
         <div className="bg-gray-50 border-b border-gray-100 px-8 pt-8 pb-6 text-center">
-          <div className="inline-flex items-center justify-center w-14 h-14 bg-[#FDF4F2] rounded-full mb-4">
-            <i className="ri-gift-2-line text-3xl text-[#E8725A]"></i>
+          <div className="inline-flex items-center justify-center w-14 h-14 bg-teal-50 rounded-full mb-4">
+            <i className="ri-gift-2-line text-3xl text-teal-600"></i>
           </div>
-          <p className="text-xs font-semibold tracking-widest text-[#E8725A] uppercase mb-2">Special Offer</p>
+          <p className="text-xs font-semibold tracking-widest text-teal-600 uppercase mb-2">Special Offer</p>
           <h3 className="text-xl font-bold text-gray-900 mb-1">
             ちょっと待ってください！
           </h3>
@@ -71,11 +71,11 @@ export default function ExitIntentPopup() {
         {/* コンテンツ */}
         <div className="px-8 py-6">
           {/* 特典ハイライト */}
-          <div className="bg-[#FDF4F2] border border-[#F0A898] rounded-xl px-6 py-4 mb-5 text-center">
-            <p className="text-xs text-[#E8725A] font-semibold mb-1 tracking-wide">今なら</p>
+          <div className="bg-teal-50 border border-teal-100 rounded-xl px-6 py-4 mb-5 text-center">
+            <p className="text-xs text-teal-600 font-semibold mb-1 tracking-wide">今なら</p>
             <p className="text-gray-900 font-bold text-lg leading-snug">
               入会金 <span className="line-through text-gray-400 font-normal text-base">¥33,000</span>
-              <span className="text-[#E8725A] text-3xl font-extrabold ml-2">¥0</span>
+              <span className="text-teal-600 text-3xl font-extrabold ml-2">¥0</span>
             </p>
           </div>
 
@@ -88,7 +88,7 @@ export default function ExitIntentPopup() {
             ].map((text) => (
               <li key={text} className="flex items-center gap-2 text-sm text-gray-700">
                 <div className="w-4 h-4 flex items-center justify-center">
-                  <i className="ri-checkbox-circle-fill text-[#E8725A] text-base"></i>
+                  <i className="ri-checkbox-circle-fill text-teal-500 text-base"></i>
                 </div>
                 <span>{text}</span>
               </li>
@@ -98,7 +98,7 @@ export default function ExitIntentPopup() {
           {/* CTAボタン */}
           <button
             onClick={handleLineClick}
-            className="w-full bg-[#E8725A] hover:bg-[#D4604A] text-white font-bold py-3.5 rounded-xl transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2 mb-3 whitespace-nowrap cursor-pointer"
+            className="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3.5 rounded-xl transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2 mb-3 whitespace-nowrap cursor-pointer"
           >
             <i className="ri-line-fill text-xl"></i>
             <span>LINEで無料相談する</span>

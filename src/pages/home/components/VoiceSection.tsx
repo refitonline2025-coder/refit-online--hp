@@ -67,7 +67,7 @@ export default function VoiceSection() {
   };
 
   return (
-    <section className="fade-in-up py-8 sm:py-10 bg-[#FDF4F2]">
+    <section className="fade-in-up py-8 sm:py-10 bg-gradient-to-b from-[#FDF4F2] to-white">
       <div className="px-4">
         <div className="text-center mb-6">
           <p className="text-sm text-[#E8725A] font-medium mb-2">Voice</p>

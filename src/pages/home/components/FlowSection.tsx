@@ -40,7 +40,7 @@ export default function FlowSection() {
   ];
 
   return (
-    <section id="flow" className="fade-in-up py-16 bg-[#FDF4F2]">
+    <section id="flow" className="fade-in-up py-16 bg-gradient-to-b from-gray-50 to-white">
       <div className="px-5">
         <div className="text-center mb-12">
           <span className="inline-block px-4 py-2 bg-[#FAEAE6] text-[#D4604A] text-base font-medium rounded-full mb-4">
@@ -57,7 +57,7 @@ export default function FlowSection() {
         {/* タイムライン形式 */}
         <div className="relative">
           {/* 中央の縦線 */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-[#F0A898]"></div>
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#F0A898] via-[#F0A898] to-[#F0A898]"></div>
 
           <div className="space-y-0">
             {steps.map((step, index) => (
@@ -95,7 +95,7 @@ export default function FlowSection() {
 
         {/* 補足メッセージ */}
         <div className="mt-12 text-center">
-          <div className="inline-flex items-center gap-3 bg-white px-8 py-5 rounded-2xl border border-[#FAE8E4] shadow-sm">
+          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#FDF4F2] to-[#FAEAE6] px-8 py-5 rounded-2xl border border-[#F0A898] shadow-sm">
             <div className="w-12 h-12 bg-[#E8725A] rounded-full flex items-center justify-center">
               <i className="ri-time-line text-2xl text-white"></i>
             </div>

@@ -1,7 +1,7 @@
 
 export default function CtaSection() {
   return (
-    <section className="py-12 sm:py-16 md:py-20 bg-white">
+    <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#FDF4F2] to-cyan-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
         {/* 緊急性の強調 */}
         <div className="inline-flex items-center gap-2 bg-red-500 text-white px-6 py-3 rounded-full mb-6 animate-pulse shadow-lg">
@@ -27,7 +27,7 @@ export default function CtaSection() {
             href="https://lin.ee/F7dPZLD"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-[#E8725A] text-white font-bold px-8 sm:px-10 py-4 sm:py-5 rounded-full hover:bg-[#D4604A] transition-all duration-200 text-base sm:text-lg shadow-md cursor-pointer whitespace-nowrap"
+            className="inline-flex items-center gap-3 bg-[#E8725A] text-white font-bold px-8 sm:px-10 py-4 sm:py-5 rounded-full hover:bg-[#D4604A] transition-all duration-200 text-base sm:text-lg shadow-xl hover:shadow-2xl cursor-pointer whitespace-nowrap animate-pulse hover:animate-none transform hover:scale-105"
           >
             <i className="ri-chat-1-line text-xl sm:text-2xl"></i>
             LINEで30秒ダイエット診断
@@ -41,17 +41,17 @@ export default function CtaSection() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
-          <div className="bg-white rounded-lg p-4 sm:p-6 border border-[#FAE8E4] shadow-sm">
+          <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 sm:p-6 border border-[#F0A898] shadow-md">
             <i className="ri-gift-line text-3xl sm:text-4xl text-[#E8725A] mb-2 sm:mb-3"></i>
             <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1 sm:mb-2">入会金0円</div>
             <div className="text-xs sm:text-sm text-gray-600">3月31日まで限定</div>
           </div>
-          <div className="bg-white rounded-lg p-4 sm:p-6 border border-[#FAE8E4] shadow-sm">
+          <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 sm:p-6 border border-[#F0A898] shadow-md">
             <i className="ri-calendar-check-line text-3xl sm:text-4xl text-[#E8725A] mb-2 sm:mb-3"></i>
             <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1 sm:mb-2">初回相談無料</div>
             <div className="text-xs sm:text-sm text-gray-600">今月お申し込みの方限定</div>
           </div>
-          <div className="bg-white rounded-lg p-4 sm:p-6 border border-[#FAE8E4] shadow-sm">
+          <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 sm:p-6 border border-[#F0A898] shadow-md">
             <i className="ri-shield-check-line text-3xl sm:text-4xl text-[#E8725A] mb-2 sm:mb-3"></i>
             <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1 sm:mb-2">月10名限定</div>
             <div className="text-xs sm:text-sm text-gray-600">質の高いサポートをお約束</div>
@@ -59,7 +59,7 @@ export default function CtaSection() {
         </div>
 
         {/* LINEの利点を追加 */}
-        <div className="mt-10 bg-white rounded-xl p-6 border border-[#FAE8E4] shadow-sm">
+        <div className="mt-10 bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-[#F0A898] shadow-md">
           <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">LINEで相談するメリット</h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">
             <div className="flex items-start gap-3">

@@ -57,7 +57,7 @@ export default function ResultSection() {
   ];
 
   return (
-    <section className="fade-in-up py-16 bg-[#FDF4F2]">
+    <section className="fade-in-up py-16 bg-gradient-to-b from-white to-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-3">
@@ -72,7 +72,7 @@ export default function ResultSection() {
           {results.map((result, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-all duration-300"
+              className="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300"
             >
               <div className="p-5">
                 {/* SNS風プロフィールヘッダー */}

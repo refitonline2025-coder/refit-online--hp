@@ -38,7 +38,7 @@ export default function DifferenceSection() {
   ];
 
   return (
-    <section className="fade-in-up py-16 bg-white">
+    <section className="fade-in-up py-16 bg-gradient-to-b from-[#FDF4F2] to-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 leading-tight">
@@ -50,7 +50,7 @@ export default function DifferenceSection() {
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-sm border border-[#FAE8E4] overflow-hidden hover:-translate-y-1 hover:shadow-md transition-all duration-300"
+              className="bg-white rounded-2xl shadow-lg border border-[#FAE8E4] overflow-hidden hover:-translate-y-2 transition-all duration-300"
             >
               {/* グラデーションバナー */}
               <div className="bg-gradient-to-r from-[#E8725A] to-[#D4604A] px-6 py-6 text-center">

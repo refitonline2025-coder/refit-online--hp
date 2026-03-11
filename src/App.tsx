@@ -6,6 +6,7 @@ import Header from './components/feature/Header';
 import FloatingLineButton from './components/feature/FloatingLineButton';
 import ScrollProgressBar from './components/feature/ScrollProgressBar';
 import ExitIntentPopup from './components/feature/ExitIntentPopup';
+import TableOfContentsSidebar from './components/feature/TableOfContentsSidebar';
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
     <BrowserRouter basename={__BASE_PATH__}>
       <ScrollProgressBar />
       <ExitIntentPopup />
+      <TableOfContentsSidebar />
       <div className="min-h-screen flex flex-col w-full">
         <Header />
         <main className="flex-1 w-full">
