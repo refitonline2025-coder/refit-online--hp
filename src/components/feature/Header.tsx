@@ -31,19 +31,19 @@ export default function Header() {
           {isMenuOpen && (
             <div className="absolute top-full left-0 mt-2 bg-white rounded-xl shadow-lg py-4 px-6 z-50 min-w-[240px] w-max">
               <nav className="flex flex-col gap-4">
-                <a href="/#trainers" onClick={closeMenu} className="text-gray-700 hover:text-rose-500 transition-colors duration-200 cursor-pointer whitespace-nowrap">
+                <a href="/#trainers" onClick={closeMenu} className="text-gray-700 hover:text-[#E8725A] transition-colors duration-200 cursor-pointer whitespace-nowrap">
                   トレーナー紹介
                 </a>
-                <a href="/#reviews" onClick={closeMenu} className="text-gray-700 hover:text-rose-500 transition-colors duration-200 cursor-pointer whitespace-nowrap">
+                <a href="/#reviews" onClick={closeMenu} className="text-gray-700 hover:text-[#E8725A] transition-colors duration-200 cursor-pointer whitespace-nowrap">
                   ご利用者の声
                 </a>
-                <a href="/#pricing" onClick={closeMenu} className="text-gray-700 hover:text-rose-500 transition-colors duration-200 cursor-pointer whitespace-nowrap">
+                <a href="/#pricing" onClick={closeMenu} className="text-gray-700 hover:text-[#E8725A] transition-colors duration-200 cursor-pointer whitespace-nowrap">
                   料金プラン
                 </a>
-                <a href="/#faq" onClick={closeMenu} className="text-gray-700 hover:text-rose-500 transition-colors duration-200 cursor-pointer whitespace-nowrap">
+                <a href="/#faq" onClick={closeMenu} className="text-gray-700 hover:text-[#E8725A] transition-colors duration-200 cursor-pointer whitespace-nowrap">
                   よくある質問
                 </a>
-                <a href="/terms" onClick={closeMenu} className="text-gray-700 hover:text-rose-500 transition-colors duration-200 cursor-pointer whitespace-nowrap">
+                <a href="/terms" onClick={closeMenu} className="text-gray-700 hover:text-[#E8725A] transition-colors duration-200 cursor-pointer whitespace-nowrap">
                   注意事項・契約条件等
                 </a>
               </nav>

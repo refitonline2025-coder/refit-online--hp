@@ -67,12 +67,12 @@ export default function VoiceSection() {
   };
 
   return (
-    <section className="fade-in-up py-8 sm:py-10 bg-gradient-to-b from-rose-50 to-white">
+    <section className="fade-in-up py-8 sm:py-10 bg-gradient-to-b from-[#FDF4F2] to-white">
       <div className="px-4">
         <div className="text-center mb-6">
-          <p className="text-sm text-rose-500 font-medium mb-2">Voice</p>
+          <p className="text-sm text-[#E8725A] font-medium mb-2">Voice</p>
           <h2 className="text-4xl font-bold text-gray-900">
-            お客様の<span className="text-rose-500">声</span>
+            お客様の<span className="text-[#E8725A]">声</span>
           </h2>
         </div>
 
@@ -121,8 +121,8 @@ export default function VoiceSection() {
 
                           {/* ユーザー情報 */}
                           <div className="flex items-center gap-3">
-                            <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${review.gender === 'male' ? 'bg-blue-100' : 'bg-pink-100'}`}>
-                              <i className={`ri-user-line text-lg ${review.gender === 'male' ? 'text-blue-500' : 'text-pink-500'}`}></i>
+                            <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${review.gender === 'male' ? 'bg-blue-100' : 'bg-[#FAEAE6]'}`}>
+                              <i className={`ri-user-line text-lg ${review.gender === 'male' ? 'text-blue-500' : 'text-[#E8725A]'}`}></i>
                             </div>
                             <div>
                               <p className="text-sm font-bold text-gray-900">{review.name}</p>
@@ -144,7 +144,7 @@ export default function VoiceSection() {
                 className="w-12 h-12 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center cursor-pointer group"
                 aria-label="前へ"
               >
-                <i className="ri-arrow-left-s-line text-2xl text-gray-600 group-hover:text-rose-500"></i>
+                <i className="ri-arrow-left-s-line text-2xl text-gray-600 group-hover:text-[#E8725A]"></i>
               </button>
 
               <div className="flex justify-center gap-1.5">
@@ -153,7 +153,7 @@ export default function VoiceSection() {
                     key={index}
                     onClick={() => setCurrentIndex(index)}
                     className={`w-2 h-2 rounded-full transition-all duration-300 cursor-pointer ${
-                      currentIndex === index ? 'bg-rose-500 w-6' : 'bg-gray-300'
+                      currentIndex === index ? 'bg-[#E8725A] w-6' : 'bg-gray-300'
                     }`}
                     aria-label={`スライド${index + 1}へ`}
                   ></button>
@@ -165,7 +165,7 @@ export default function VoiceSection() {
                 className="w-12 h-12 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center cursor-pointer group"
                 aria-label="次へ"
               >
-                <i className="ri-arrow-right-s-line text-2xl text-gray-600 group-hover:text-rose-500"></i>
+                <i className="ri-arrow-right-s-line text-2xl text-gray-600 group-hover:text-[#E8725A]"></i>
               </button>
             </div>
           </div>

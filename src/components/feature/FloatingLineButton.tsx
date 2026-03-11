@@ -13,15 +13,22 @@ export default function FloatingLineButton() {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50">
+    <div className="fixed bottom-6 right-4 flex flex-col gap-3 z-50">
+      <a
+        href="https://refit-online.onrender.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-14 h-14 rounded-full shadow-lg flex items-center justify-center bg-white border-2 border-[#F0A898] text-[#E8725A] hover:shadow-xl transition-all duration-200"
+      >
+        <i className="ri-robot-line text-2xl"></i>
+      </a>
       <a
         href="https://lin.ee/F7dPZLD"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center justify-center gap-3 bg-green-500 text-white font-bold py-4 w-full text-base hover:bg-green-600 transition-colors duration-200"
+        className="w-14 h-14 rounded-full shadow-lg flex items-center justify-center bg-[#06C755] text-white hover:bg-[#05b04c] transition-all duration-200"
       >
         <i className="ri-line-line text-2xl"></i>
-        LINEで無料相談・ダイエット診断
       </a>
     </div>
   );

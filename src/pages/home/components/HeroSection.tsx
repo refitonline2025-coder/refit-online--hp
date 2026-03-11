@@ -95,7 +95,7 @@ export default function HeroSection() {
             <div ref={count2.ref} className="bg-white/95 backdrop-blur-sm rounded-lg px-4 py-3 shadow-lg">
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 flex items-center justify-center">
-                  <i className="ri-arrow-down-line text-xl text-rose-600"></i>
+                  <i className="ri-arrow-down-line text-xl text-[#D4604A]"></i>
                 </div>
                 <div>
                   <div className="text-2xl font-bold text-gray-900 leading-none">{count2.display}</div>

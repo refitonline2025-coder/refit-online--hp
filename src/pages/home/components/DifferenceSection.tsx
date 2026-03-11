@@ -38,11 +38,11 @@ export default function DifferenceSection() {
   ];
 
   return (
-    <section className="fade-in-up py-16 bg-gradient-to-b from-rose-50 to-white">
+    <section className="fade-in-up py-16 bg-gradient-to-b from-[#FDF4F2] to-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 leading-tight">
-            ReFitが選ばれる<span className="text-rose-500">3つの理由</span>
+            ReFitが選ばれる<span className="text-[#E8725A]">3つの理由</span>
           </h2>
         </div>
 
@@ -50,10 +50,10 @@ export default function DifferenceSection() {
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg border border-rose-100 overflow-hidden hover:-translate-y-2 transition-all duration-300"
+              className="bg-white rounded-2xl shadow-lg border border-[#FAE8E4] overflow-hidden hover:-translate-y-2 transition-all duration-300"
             >
               {/* グラデーションバナー */}
-              <div className="bg-gradient-to-r from-rose-400 to-pink-400 px-6 py-6 text-center">
+              <div className="bg-gradient-to-r from-[#E8725A] to-[#D4604A] px-6 py-6 text-center">
                 <span className="text-white/60 text-4xl font-black">{reason.number}</span>
                 <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center mx-auto mt-2">
                   <i className={`${reason.icon} text-3xl text-white`}></i>
@@ -73,8 +73,8 @@ export default function DifferenceSection() {
                 <div className="space-y-2.5">
                   {reason.highlights.map((highlight, idx) => (
                     <div key={idx} className="flex items-center gap-2.5">
-                      <div className="w-8 h-8 bg-rose-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <i className={`${highlight.icon} text-rose-500 text-base`}></i>
+                      <div className="w-8 h-8 bg-[#FDF4F2] rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i className={`${highlight.icon} text-[#E8725A] text-base`}></i>
                       </div>
                       <span className="text-sm font-medium text-gray-700">{highlight.text}</span>
                     </div>
@@ -82,7 +82,7 @@ export default function DifferenceSection() {
                 </div>
 
                 {/* 下部ボーダーライン */}
-                <div className="mt-5 pt-0 border-t-2 border-rose-100"></div>
+                <div className="mt-5 pt-0 border-t-2 border-[#FAE8E4]"></div>
               </div>
             </div>
           ))}

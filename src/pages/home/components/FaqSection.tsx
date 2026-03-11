@@ -46,22 +46,22 @@ export default function FaqSection() {
     <section id="faq" className="fade-in-up py-16 bg-white">
       <div className="px-5">
         <div className="text-center mb-10">
-          <p className="text-xl text-rose-500 font-medium mb-3">FAQ</p>
+          <p className="text-xl text-[#E8725A] font-medium mb-3">FAQ</p>
           <h2 className="text-4xl font-bold text-gray-900">よくある質問</h2>
         </div>
 
         <div className="max-w-3xl mx-auto space-y-3">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:border-rose-200 transition-colors duration-200 shadow-sm">
+            <div key={index} className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:border-[#F0A898] transition-colors duration-200 shadow-sm">
               <button
                 onClick={() => toggleFaq(index)}
                 className="w-full px-5 sm:px-6 py-4 sm:py-5 flex items-center gap-3 text-left hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
               >
-                <span className="w-8 h-8 bg-rose-500 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">Q</span>
+                <span className="w-8 h-8 bg-[#E8725A] text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">Q</span>
                 <p className="flex-1 font-semibold text-gray-900 text-sm sm:text-base leading-relaxed">{faq.question}</p>
                 <i
                   className={`ri-arrow-down-s-line text-2xl text-gray-400 flex-shrink-0 transition-transform duration-300 ${
-                    openIndex === index ? 'rotate-180 text-rose-500' : ''
+                    openIndex === index ? 'rotate-180 text-[#E8725A]' : ''
                   }`}
                 ></i>
               </button>
@@ -71,8 +71,8 @@ export default function FaqSection() {
                   openIndex === index ? 'max-h-[600px]' : 'max-h-0'
                 }`}
               >
-                <div className="mx-5 sm:mx-6 mb-4 sm:mb-5 bg-rose-50/60 rounded-lg p-4 flex gap-3">
-                  <span className="w-8 h-8 bg-rose-100 text-rose-600 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">A</span>
+                <div className="mx-5 sm:mx-6 mb-4 sm:mb-5 bg-[#FDF4F2]/60 rounded-lg p-4 flex gap-3">
+                  <span className="w-8 h-8 bg-[#FAEAE6] text-[#D4604A] rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">A</span>
                   <p className="flex-1 text-gray-700 text-sm sm:text-base leading-relaxed pt-1">{faq.answer}</p>
                 </div>
               </div>

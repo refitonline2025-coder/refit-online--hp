@@ -29,7 +29,7 @@ function ScrollProgressBar() {
       style={{ pointerEvents: 'none' }}
     >
       <div
-        className="h-full bg-gradient-to-r from-rose-400 via-rose-300 to-emerald-400 transition-all duration-150 ease-out"
+        className="h-full bg-gradient-to-r from-[#E8725A] via-[#F0A898] to-emerald-400 transition-all duration-150 ease-out"
         style={{ width: `${scrollProgress}%` }}
       />
     </div>

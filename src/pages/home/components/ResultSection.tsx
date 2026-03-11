@@ -57,11 +57,11 @@ export default function ResultSection() {
   ];
 
   return (
-    <section className="fade-in-up py-16 bg-gradient-to-b from-white to-rose-50">
+    <section className="fade-in-up py-16 bg-gradient-to-b from-white to-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-3">
-            ReFit Onlineを使った<span className="text-rose-500">お客様の変化</span>
+            ReFit Onlineを使った<span className="text-[#E8725A]">お客様の変化</span>
           </h2>
           <p className="text-base text-gray-600">
             科学的根拠に基づいた食事指導で、確実な結果を実現
@@ -77,7 +77,7 @@ export default function ResultSection() {
               <div className="p-5">
                 {/* SNS風プロフィールヘッダー */}
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 border-2 border-rose-200">
+                  <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 border-2 border-[#F0A898]">
                     <img src={result.image} alt={result.name} className="w-full h-full object-cover object-top" />
                   </div>
                   <div>
@@ -88,8 +88,8 @@ export default function ResultSection() {
 
                 {/* 達成kg数 */}
                 <div className="text-center mb-4">
-                  <span className="text-3xl font-bold text-rose-500">{result.weight}</span>
-                  <span className="text-sm font-bold text-rose-400 ml-1">達成！</span>
+                  <span className="text-3xl font-bold text-[#E8725A]">{result.weight}</span>
+                  <span className="text-sm font-bold text-[#E8725A] ml-1">達成！</span>
                 </div>
 
                 {/* 星評価 */}
@@ -100,8 +100,8 @@ export default function ResultSection() {
                 </div>
 
                 {/* コメント吹き出し */}
-                <div className="relative bg-rose-50 rounded-2xl p-4 mb-4">
-                  <div className="absolute -top-2 left-6 w-4 h-4 bg-rose-50 rotate-45"></div>
+                <div className="relative bg-[#FDF4F2] rounded-2xl p-4 mb-4">
+                  <div className="absolute -top-2 left-6 w-4 h-4 bg-[#FDF4F2] rotate-45"></div>
                   <p className="text-sm text-gray-700 leading-relaxed relative z-10">{result.comment}</p>
                 </div>
 

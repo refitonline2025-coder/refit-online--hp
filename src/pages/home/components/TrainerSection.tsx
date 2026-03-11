@@ -79,7 +79,7 @@ export default function TrainerSection() {
   };
 
   return (
-    <section id="trainers" className="fade-in-up py-16 bg-gradient-to-b from-white via-rose-50/30 to-white overflow-hidden">
+    <section id="trainers" className="fade-in-up py-16 bg-gradient-to-b from-white via-[#FDF4F2]/30 to-white overflow-hidden">
       <div className="px-5">
         {/* ダイエットコンシェルジュ紹介 */}
         <div>
@@ -87,7 +87,7 @@ export default function TrainerSection() {
             <h3 className="text-3xl font-bold text-gray-900 mb-3">
               ReFitダイエットコンシェルジュ紹介
             </h3>
-            <p className="text-sm text-rose-500 font-medium mb-1">
+            <p className="text-sm text-[#E8725A] font-medium mb-1">
               弊社規定の栄養資格取得済み
             </p>
             <p className="text-base text-gray-600">
@@ -147,7 +147,7 @@ export default function TrainerSection() {
                                 className="flex items-center gap-2 text-sm text-gray-600"
                               >
                                 <div className="w-5 h-5 flex items-center justify-center flex-shrink-0">
-                                  <i className={`${specialty.icon} text-rose-500`}></i>
+                                  <i className={`${specialty.icon} text-[#E8725A]`}></i>
                                 </div>
                                 <span className="text-xs">{specialty.text}</span>
                               </div>
@@ -174,7 +174,7 @@ export default function TrainerSection() {
                 className="w-12 h-12 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center cursor-pointer group"
                 aria-label="前へ"
               >
-                <i className="ri-arrow-left-s-line text-2xl text-gray-600 group-hover:text-rose-500"></i>
+                <i className="ri-arrow-left-s-line text-2xl text-gray-600 group-hover:text-[#E8725A]"></i>
               </button>
 
               {/* インジケーター */}
@@ -184,7 +184,7 @@ export default function TrainerSection() {
                     key={index}
                     onClick={() => setCurrentIndex(index)}
                     className={`w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer ${
-                      currentIndex === index ? 'bg-rose-500 w-6' : 'bg-gray-300'
+                      currentIndex === index ? 'bg-[#E8725A] w-6' : 'bg-gray-300'
                     }`}
                     aria-label={`スライド${index + 1}へ`}
                   ></button>
@@ -197,7 +197,7 @@ export default function TrainerSection() {
                 className="w-12 h-12 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center cursor-pointer group"
                 aria-label="次へ"
               >
-                <i className="ri-arrow-right-s-line text-2xl text-gray-600 group-hover:text-rose-500"></i>
+                <i className="ri-arrow-right-s-line text-2xl text-gray-600 group-hover:text-[#E8725A]"></i>
               </button>
             </div>
           </div>

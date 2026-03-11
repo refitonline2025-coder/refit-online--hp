@@ -7,35 +7,35 @@ export default function FlowSection() {
       title: 'LINEで無料相談',
       description: 'まずはLINEで気軽にご相談。あなたの目標や悩みをお聞きします。',
       icon: 'ri-chat-1-line',
-      color: 'from-rose-300 to-rose-400',
+      color: 'from-[#E8725A] to-[#D4604A]',
     },
     {
       number: '02',
       title: 'プラン選択・お申し込み',
       description: '最適なプランをご提案。納得いただけたらお申し込みへ。',
       icon: 'ri-file-list-3-line',
-      color: 'from-rose-300 to-rose-400',
+      color: 'from-[#E8725A] to-[#D4604A]',
     },
     {
       number: '03',
       title: '遺伝子検査キット送付',
       description: 'スタンダード/プレミアムプランの方には検査キットをお届け。',
       icon: 'ri-test-tube-line',
-      color: 'from-rose-300 to-rose-400',
+      color: 'from-[#E8725A] to-[#D4604A]',
     },
     {
       number: '04',
       title: 'オーダーメイドプラン作成',
       description: '検査結果と目標に基づき、あなた専用プランを作成。',
       icon: 'ri-draft-line',
-      color: 'from-rose-300 to-rose-400',
+      color: 'from-[#E8725A] to-[#D4604A]',
     },
     {
       number: '05',
       title: 'サポート開始',
       description: '専属トレーナーによる毎日のサポートがスタート！',
       icon: 'ri-user-heart-line',
-      color: 'from-rose-300 to-rose-400',
+      color: 'from-[#E8725A] to-[#D4604A]',
     },
   ];
 
@@ -43,7 +43,7 @@ export default function FlowSection() {
     <section id="flow" className="fade-in-up py-16 bg-gradient-to-b from-gray-50 to-white">
       <div className="px-5">
         <div className="text-center mb-12">
-          <span className="inline-block px-4 py-2 bg-rose-100 text-rose-600 text-base font-medium rounded-full mb-4">
+          <span className="inline-block px-4 py-2 bg-[#FAEAE6] text-[#D4604A] text-base font-medium rounded-full mb-4">
             Flow
           </span>
           <h2 className="text-4xl font-bold text-gray-900 mb-3">
@@ -57,16 +57,16 @@ export default function FlowSection() {
         {/* タイムライン形式 */}
         <div className="relative">
           {/* 中央の縦線 */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-rose-200 via-rose-300 to-rose-200"></div>
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#F0A898] via-[#F0A898] to-[#F0A898]"></div>
 
           <div className="space-y-0">
             {steps.map((step, index) => (
               <div key={index} className="relative pl-20 pb-8 last:pb-0">
                 {/* ステップ番号（丸） */}
                 <div
-                  className="absolute left-0 w-16 h-16 bg-rose-200 rounded-full flex items-center justify-center shadow-lg z-10"
+                  className="absolute left-0 w-16 h-16 bg-[#FAEAE6] rounded-full flex items-center justify-center shadow-lg z-10"
                 >
-                  <span className="text-rose-500 font-bold text-2xl">{index + 1}</span>
+                  <span className="text-[#E8725A] font-bold text-2xl">{index + 1}</span>
                 </div>
 
                 {/* カード */}
@@ -95,12 +95,12 @@ export default function FlowSection() {
 
         {/* 補足メッセージ */}
         <div className="mt-12 text-center">
-          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-rose-50 to-rose-100 px-8 py-5 rounded-2xl border border-rose-200 shadow-sm">
-            <div className="w-12 h-12 bg-rose-400 rounded-full flex items-center justify-center">
+          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#FDF4F2] to-[#FAEAE6] px-8 py-5 rounded-2xl border border-[#F0A898] shadow-sm">
+            <div className="w-12 h-12 bg-[#E8725A] rounded-full flex items-center justify-center">
               <i className="ri-time-line text-2xl text-white"></i>
             </div>
             <p className="text-xl text-gray-700">
-              <span className="font-bold text-rose-500">最短翌日</span>からサポート開始可能！
+              <span className="font-bold text-[#E8725A]">最短翌日</span>からサポート開始可能！
             </p>
           </div>
         </div>
