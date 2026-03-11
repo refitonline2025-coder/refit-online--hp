@@ -1,6 +1,13 @@
+import { useMemo } from 'react';
 import MicroCta from '../../../components/feature/MicroCta';
 
 export default function SpecialOfferSection() {
+  const deadlineLabel = useMemo(() => {
+    const now = new Date();
+    const lastDay = new Date(now.getFullYear(), now.getMonth() + 1, 0);
+    return `${lastDay.getMonth() + 1}月${lastDay.getDate()}日`;
+  }, []);
+
   return (
     <section className="py-12 sm:py-16 md:py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -161,9 +168,12 @@ export default function SpecialOfferSection() {
             <span className="text-sm font-bold text-white">特別提供</span>
           </div>
 
-          <h3 className="text-xl sm:text-2xl font-bold text-white mb-6">
+          <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
             期間限定で以下の特典付きでご提供
           </h3>
+          <p className="text-lg sm:text-xl font-bold text-amber-200 mb-6">
+            <i className="ri-calendar-event-line mr-1"></i>{deadlineLabel}まで
+          </p>
 
           <div className="max-w-2xl mx-auto space-y-3 mb-6">
             <div className="flex items-center gap-3 bg-white/15 rounded-lg p-3 sm:p-4">

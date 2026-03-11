@@ -10,17 +10,14 @@ export default function CountdownBanner() {
   });
 
   useEffect(() => {
-    // 初回マウント時に10日後の終了日時をセッションに保存
-    let endTime = sessionStorage.getItem('campaignEndTime');
-    if (!endTime) {
-      const end = new Date(Date.now() + 10 * 24 * 60 * 60 * 1000);
-      endTime = end.toISOString();
-      sessionStorage.setItem('campaignEndTime', endTime);
-    }
+    const getEndOfMonth = () => {
+      const now = new Date();
+      return new Date(now.getFullYear(), now.getMonth() + 1, 0, 23, 59, 59, 999);
+    };
 
     const calculateTimeLeft = () => {
       const now = new Date();
-      const end = new Date(endTime as string);
+      const end = getEndOfMonth();
       const difference = end.getTime() - now.getTime();
 
       if (difference > 0) {
@@ -53,7 +50,7 @@ export default function CountdownBanner() {
             <div>
               <div className="text-xs text-gray-500 leading-none mb-1 whitespace-nowrap">今月の受付</div>
               <div className="text-xl font-bold text-gray-900 leading-none whitespace-nowrap">
-                残り<span className="text-teal-600 mx-1">10名</span>様
+                残り<span className="text-teal-600 mx-1">6名</span>様
               </div>
             </div>
           </div>

@@ -7,7 +7,7 @@ export default function ResultSection() {
     {
       name: '佐藤 美咲様',
       age: '20代/女性',
-      plan: 'プレミアムプラン 3ヶ月',
+      plan: '',
       image: 'https://static.readdy.ai/image/35ed947d703ab27b65e8910bc3f502d9/f642f2ad2eb76691ee2c2eb5d5971b08.jpeg',
       weight: '-6kg',
       beforeAfter: {
@@ -19,7 +19,7 @@ export default function ResultSection() {
     {
       name: '田中 麻衣様',
       age: '30代/女性',
-      plan: 'プレミアムプラン 3ヶ月',
+      plan: '',
       image: 'https://static.readdy.ai/image/35ed947d703ab27b65e8910bc3f502d9/50ccc1474508a3632e28c96ff150802e.jpeg',
       weight: '-8kg',
       beforeAfter: {
@@ -31,7 +31,7 @@ export default function ResultSection() {
     {
       name: '鈴木 彩花様',
       age: '30代/女性',
-      plan: 'プレミアムプラン 3ヶ月',
+      plan: '',
       image: 'https://static.readdy.ai/image/35ed947d703ab27b65e8910bc3f502d9/582763a5dcc503173fdbdd3126313b22.jpeg',
       weight: '-10kg',
       beforeAfter: {
@@ -43,7 +43,7 @@ export default function ResultSection() {
     {
       name: '松本 理香様',
       age: '20代/女性',
-      plan: 'プレミアムプラン 3ヶ月',
+      plan: '',
       image: 'https://static.readdy.ai/image/35ed947d703ab27b65e8910bc3f502d9/d9129a3693080f4b8e4491e5252f3bda.jpeg',
       weight: '-7kg',
       beforeAfter: {
@@ -55,7 +55,7 @@ export default function ResultSection() {
     {
       name: '山田 健太様',
       age: '30代/男性',
-      plan: 'プレミアムプラン 6ヶ月',
+      plan: '',
       image: 'https://static.readdy.ai/image/35ed947d703ab27b65e8910bc3f502d9/660b9648c806e466ce75cdc69a36927a.jpeg',
       weight: '-12kg',
       beforeAfter: {
@@ -67,7 +67,7 @@ export default function ResultSection() {
     {
       name: '中村 愛美様',
       age: '20代/女性',
-      plan: 'プレミアムプラン 3ヶ月',
+      plan: '',
       image: 'https://static.readdy.ai/image/35ed947d703ab27b65e8910bc3f502d9/d7411d6bc12f490cbef347486b913a8a.jpeg',
       weight: '-5kg',
       beforeAfter: {
@@ -135,7 +135,7 @@ export default function ResultSection() {
                 <div className="mb-5">
                   <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">{currentResult.name}</h3>
                   <p className="text-sm text-gray-600 mb-1">{currentResult.age}</p>
-                  <p className="text-sm text-teal-600 font-medium">{currentResult.plan}</p>
+                  {currentResult.plan && <p className="text-sm text-teal-600 font-medium">{currentResult.plan}</p>}
                 </div>
 
                 <h4 className="text-base sm:text-lg font-bold text-gray-900 mb-5 leading-relaxed">

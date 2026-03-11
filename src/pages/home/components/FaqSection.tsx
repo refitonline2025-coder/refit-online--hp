@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     question: '栄養や食事の知識がほとんどないのですが、大丈夫でしょうか?',
-    answer: 'もちろん大丈夫です!ご利用されているお客様の多くが食事管理の経験がない方や、栄養の知識がない方など、初心者の方々もたくさんいらっしゃいますので、どうぞご安心してお気軽にお越しください。基礎から丁寧にお教えします。'
+    answer: 'もちろん大丈夫です!ご利用されているお客様の多くが食事管理の経験がない方や、栄養の知識がない方など、初心者の方々もたくさんいらっしゃいますので、どうぞご安心してお気軽にご利用ください。基礎から丁寧にお教えします。'
   },
   {
     question: '毎日の食事報告はどのように行うのですか?',
@@ -50,18 +50,18 @@ export default function FaqSection() {
           <h2 className="text-4xl font-bold text-gray-900">よくある質問</h2>
         </div>
 
-        <div className="space-y-4">
+        <div className="max-w-3xl mx-auto space-y-3">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:border-teal-300 transition-colors duration-200">
+            <div key={index} className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:border-teal-300 transition-colors duration-200 shadow-sm">
               <button
                 onClick={() => toggleFaq(index)}
-                className="w-full px-6 py-5 flex items-start gap-4 text-left hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
+                className="w-full px-5 sm:px-6 py-4 sm:py-5 flex items-center gap-3 text-left hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
               >
-                <span className="text-teal-600 font-bold text-xl flex-shrink-0">Q.</span>
-                <p className="flex-1 font-bold text-gray-900 text-lg leading-relaxed">{faq.question}</p>
+                <span className="w-8 h-8 bg-teal-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">Q</span>
+                <p className="flex-1 font-semibold text-gray-900 text-sm sm:text-base leading-relaxed">{faq.question}</p>
                 <i
-                  className={`ri-arrow-down-s-line text-3xl text-gray-600 flex-shrink-0 transition-transform duration-200 ${
-                    openIndex === index ? 'rotate-180' : ''
+                  className={`ri-arrow-down-s-line text-2xl text-gray-400 flex-shrink-0 transition-transform duration-300 ${
+                    openIndex === index ? 'rotate-180 text-teal-600' : ''
                   }`}
                 ></i>
               </button>
@@ -71,9 +71,9 @@ export default function FaqSection() {
                   openIndex === index ? 'max-h-[600px]' : 'max-h-0'
                 }`}
               >
-                <div className="px-6 pb-5 flex gap-4">
-                  <span className="text-teal-500 font-bold text-xl flex-shrink-0">A.</span>
-                  <p className="flex-1 text-gray-700 text-base leading-relaxed">{faq.answer}</p>
+                <div className="mx-5 sm:mx-6 mb-4 sm:mb-5 bg-teal-50/60 rounded-lg p-4 flex gap-3">
+                  <span className="w-8 h-8 bg-teal-100 text-teal-700 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">A</span>
+                  <p className="flex-1 text-gray-700 text-sm sm:text-base leading-relaxed pt-1">{faq.answer}</p>
                 </div>
               </div>
             </div>

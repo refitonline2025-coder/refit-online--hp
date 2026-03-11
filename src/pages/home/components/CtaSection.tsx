@@ -6,7 +6,7 @@ export default function CtaSection() {
         {/* 緊急性の強調 */}
         <div className="inline-flex items-center gap-2 bg-red-500 text-white px-6 py-3 rounded-full mb-6 animate-pulse shadow-lg">
           <i className="ri-alarm-warning-line text-xl"></i>
-          <span className="font-bold text-sm sm:text-base">2月28日まで！入会金33,000円が今だけ0円</span>
+          <span className="font-bold text-sm sm:text-base">3月31日まで！入会金33,000円が今だけ0円</span>
         </div>
 
         <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight px-4">
@@ -19,7 +19,7 @@ export default function CtaSection() {
         {/* 枠数の強調 */}
         <div className="inline-flex items-center gap-3 bg-teal-600 text-white px-8 py-3 rounded-full mb-8 shadow-lg">
           <i className="ri-user-heart-line text-2xl"></i>
-          <span className="font-bold text-base sm:text-lg">今月の受付枠：残り5名様</span>
+          <span className="font-bold text-base sm:text-lg">今月の受付枠：残り6名様</span>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-6 sm:mb-8 px-4">
@@ -44,7 +44,7 @@ export default function CtaSection() {
           <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 sm:p-6 border border-teal-200 shadow-md">
             <i className="ri-gift-line text-3xl sm:text-4xl text-teal-600 mb-2 sm:mb-3"></i>
             <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1 sm:mb-2">入会金0円</div>
-            <div className="text-xs sm:text-sm text-gray-600">12月31日まで限定</div>
+            <div className="text-xs sm:text-sm text-gray-600">3月31日まで限定</div>
           </div>
           <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 sm:p-6 border border-teal-200 shadow-md">
             <i className="ri-calendar-check-line text-3xl sm:text-4xl text-teal-600 mb-2 sm:mb-3"></i>

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function TrainerSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -58,8 +58,17 @@ export default function TrainerSection() {
     }
   ];
 
-  // 3つずつ表示するため、最大インデックスを調整
-  const maxIndex = concierges.length - 3;
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
+
+  const visibleCount = isMobile ? 2 : 3;
+  const maxIndex = concierges.length - visibleCount;
 
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev === 0 ? maxIndex : prev - 1));
@@ -98,12 +107,12 @@ export default function TrainerSection() {
             <div className="overflow-hidden mb-6">
               <div
                 className="flex transition-transform duration-500 ease-in-out"
-                style={{ transform: `translateX(-${currentIndex * (100 / 3)}%)` }}
+                style={{ transform: `translateX(-${currentIndex * (100 / visibleCount)}%)` }}
               >
                 {concierges.map((concierge, index) => (
                   <div
                     key={index}
-                    className="w-1/3 flex-shrink-0 px-2"
+                    className="w-1/2 md:w-1/3 flex-shrink-0 px-2"
                   >
                     <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 h-full">
                       <div className="aspect-[3/4] overflow-hidden">
