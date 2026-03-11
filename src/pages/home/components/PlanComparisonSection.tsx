@@ -145,7 +145,7 @@ export default function PlanComparisonSection() {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-b from-white to-gray-50">
+    <section id="plans" className="fade-in-up py-16 bg-gradient-to-b from-white to-gray-50">
       <div className="px-5">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -154,21 +154,21 @@ export default function PlanComparisonSection() {
           <p className="text-lg text-gray-600">3つのプランから、あなたの目標に合わせてお選びいただけます</p>
         </div>
 
-        {/* プランカード - 3枚横並び */}
+        {/* プランカード - スマホ時はスタンダードを一番上に */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-5xl mx-auto items-end">
-          {plans.map((plan, index) => (
+          {[plans[1], plans[0], plans[2]].map((plan) => (
             <div
-              key={index}
+              key={plan.name}
               className={`relative rounded-2xl overflow-hidden transition-all duration-300 ${
                 plan.popular
-                  ? 'shadow-2xl border-2 border-teal-400 scale-105 bg-white'
+                  ? 'shadow-2xl border-2 border-teal-400 md:scale-105 bg-white order-first md:order-none'
                   : plan.premium
-                  ? 'shadow-xl border-2 border-orange-400 bg-white hover:shadow-2xl'
-                  : 'shadow-lg border border-gray-100 bg-white hover:shadow-xl'
+                  ? 'shadow-xl border-2 border-orange-400 bg-white hover:shadow-2xl order-last md:order-none'
+                  : 'shadow-lg border border-gray-100 bg-white hover:shadow-xl order-2 md:order-none'
               }`}
             >
               {plan.badge && (
-                <div className="bg-gradient-to-r from-teal-500 to-teal-600 text-white text-sm font-bold text-center py-2.5 tracking-wide">
+                <div className="bg-gradient-to-r from-yellow-400 to-orange-400 text-white text-sm font-bold text-center py-2.5 tracking-wide">
                   {plan.badge}
                 </div>
               )}
@@ -185,14 +185,14 @@ export default function PlanComparisonSection() {
                 <div className="mb-6">
                   <div className="flex items-baseline gap-1 mb-1">
                     <span
-                      className={`text-4xl font-bold ${
+                      className={`text-5xl font-bold ${
                         plan.popular ? 'text-teal-600' : plan.premium ? 'text-orange-500' : 'text-gray-800'
                       }`}
                     >
                       {plan.monthlyPrice}
                     </span>
-                    <span className="text-gray-600 text-sm font-medium">円</span>
-                    <span className="text-xs text-gray-400 ml-0.5">/ 月</span>
+                    <span className="text-gray-600 text-base font-medium">円</span>
+                    <span className="text-sm text-gray-400 ml-0.5">/ 月</span>
                   </div>
                   <p className="text-xs text-gray-400 mt-1">3ヶ月合計 {plan.price}円（税込）</p>
                 </div>

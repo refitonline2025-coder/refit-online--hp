@@ -40,7 +40,7 @@ export default function FlowSection() {
   ];
 
   return (
-    <section id="flow" className="py-16 bg-gradient-to-b from-gray-50 to-white">
+    <section id="flow" className="fade-in-up py-16 bg-gradient-to-b from-gray-50 to-white">
       <div className="px-5">
         <div className="text-center mb-12">
           <span className="inline-block px-4 py-2 bg-teal-100 text-teal-700 text-base font-medium rounded-full mb-4">

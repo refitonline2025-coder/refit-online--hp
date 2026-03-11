@@ -43,7 +43,7 @@ export default function FaqSection() {
   };
 
   return (
-    <section id="faq" className="py-16 bg-white">
+    <section id="faq" className="fade-in-up py-16 bg-white">
       <div className="px-5">
         <div className="text-center mb-10">
           <p className="text-xl text-teal-600 font-medium mb-3">FAQ</p>

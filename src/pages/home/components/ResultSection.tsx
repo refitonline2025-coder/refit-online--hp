@@ -89,7 +89,7 @@ export default function ResultSection() {
   const currentResult = results[currentIndex];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="fade-in-up py-16 bg-white">
       <div className="max-w-5xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-3">
@@ -124,8 +124,8 @@ export default function ResultSection() {
                 )}
 
                 {/* 達成kg数バッジ */}
-                <div className="absolute top-4 right-4 bg-teal-500 text-white rounded-full px-5 py-2.5 shadow-lg">
-                  <div className="text-2xl font-bold leading-none">{currentResult.weight}</div>
+                <div className="absolute top-4 right-4 bg-green-500 text-white rounded-full px-6 py-3 shadow-lg">
+                  <div className="text-3xl font-bold leading-none">{currentResult.weight}</div>
                   <div className="text-xs mt-0.5 opacity-90">達成</div>
                 </div>
               </div>
@@ -143,15 +143,15 @@ export default function ResultSection() {
                 </h4>
 
                 <div className="space-y-3">
-                  <div className="bg-red-50 rounded-xl p-4 border-l-4 border-red-400">
+                  <div className="bg-red-50 rounded-xl p-4 border-l-4 border-red-300">
                     <p className="text-xs font-bold text-red-600 mb-1.5 flex items-center gap-2">
                       <i className="ri-close-circle-line text-base"></i>
                       Before
                     </p>
                     <p className="text-sm text-gray-700 leading-relaxed">{currentResult.beforeAfter.before}</p>
                   </div>
-                  <div className="bg-teal-50 rounded-xl p-4 border-l-4 border-teal-400">
-                    <p className="text-xs font-bold text-teal-600 mb-1.5 flex items-center gap-2">
+                  <div className="bg-green-50 rounded-xl p-4 border-l-4 border-green-300">
+                    <p className="text-xs font-bold text-green-600 mb-1.5 flex items-center gap-2">
                       <i className="ri-checkbox-circle-line text-base"></i>
                       After
                     </p>

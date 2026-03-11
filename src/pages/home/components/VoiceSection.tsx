@@ -67,7 +67,7 @@ export default function VoiceSection() {
   };
 
   return (
-    <section className="py-8 sm:py-10 bg-gradient-to-b from-teal-50 to-white">
+    <section className="fade-in-up py-8 sm:py-10 bg-gradient-to-b from-teal-50 to-white">
       <div className="px-4">
         <div className="text-center mb-6">
           <p className="text-sm text-teal-600 font-medium mb-2">Voice</p>
@@ -100,7 +100,7 @@ export default function VoiceSection() {
                       {reviews.slice(pageIndex * itemsPerPage, (pageIndex + 1) * itemsPerPage).map((review, index) => (
                         <div
                           key={index}
-                          className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-5 border border-gray-100"
+                          className="bg-white rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 p-5 border border-gray-100"
                         >
                           {/* 星評価 */}
                           <div className="flex items-center gap-1 mb-3">

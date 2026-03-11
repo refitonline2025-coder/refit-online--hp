@@ -9,7 +9,7 @@ export default function SpecialOfferSection() {
   }, []);
 
   return (
-    <section className="py-12 sm:py-16 md:py-20 bg-white">
+    <section className="fade-in-up py-12 sm:py-16 md:py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* セクション見出し */}
         <div className="text-center mb-10 sm:mb-12">

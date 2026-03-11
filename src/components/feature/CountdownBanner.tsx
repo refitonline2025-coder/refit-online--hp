@@ -38,7 +38,7 @@ export default function CountdownBanner() {
   }, []);
 
   return (
-    <div className="bg-white border-b border-gray-200 py-3 px-5 shadow-sm">
+    <div className="fade-in-up bg-white border-b border-gray-200 py-3 px-5 shadow-sm">
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
 

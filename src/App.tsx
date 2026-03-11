@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { AppRoutes } from './router';
 import Footer from './components/feature/Footer';
@@ -9,6 +9,21 @@ import ExitIntentPopup from './components/feature/ExitIntentPopup';
 import TableOfContentsSidebar from './components/feature/TableOfContentsSidebar';
 
 function App() {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+    document.querySelectorAll('.fade-in-up').forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <BrowserRouter basename={__BASE_PATH__}>
       <ScrollProgressBar />

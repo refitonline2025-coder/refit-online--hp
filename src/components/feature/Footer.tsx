@@ -49,8 +49,12 @@ export default function Footer() {
               よくある質問
             </a>
           </div>
+          <div className="text-center text-xs text-gray-500 mb-2">
+            <p className="font-medium">株式会社ReFit</p>
+            <p>所在地：大阪府大阪市北区</p>
+          </div>
           <p className="text-center text-xs text-gray-500">
-            Copyright © ReFit Online All Rights Reserved.
+            Copyright &copy; ReFit Online All Rights Reserved.
           </p>
         </div>
       </div>

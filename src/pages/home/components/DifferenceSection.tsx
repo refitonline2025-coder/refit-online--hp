@@ -63,7 +63,7 @@ export default function DifferenceSection() {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-b from-white to-gray-50">
+    <section className="fade-in-up py-16 bg-gradient-to-b from-white to-gray-50">
       <div className="px-5">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 leading-tight">

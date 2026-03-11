@@ -1,30 +1,28 @@
+import { useState, useEffect } from 'react';
+
 export default function FloatingLineButton() {
-  const handleAgentClick = () => {
-    const widgetButton = document.querySelector('#vapi-widget-floating-button') as HTMLElement;
-    if (widgetButton) {
-      widgetButton.click();
-    }
-  };
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setVisible(window.scrollY >= 200);
+    handleScroll();
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  if (!visible) return null;
 
   return (
-    <div className="fixed bottom-24 left-6 z-50 flex items-center gap-3">
+    <div className="fixed bottom-0 left-0 right-0 z-50">
       <a
         href="https://lin.ee/F7dPZLD"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-3 bg-[#06C755] text-white font-bold px-10 py-6 rounded-full hover:bg-[#05b34c] transition-all duration-200 text-2xl shadow-2xl cursor-pointer whitespace-nowrap animate-pulse hover:animate-none"
+        className="flex items-center justify-center gap-3 bg-green-500 text-white font-bold py-4 w-full text-base hover:bg-green-600 transition-colors duration-200"
       >
-        <i className="ri-line-line text-3xl"></i>
-        LINEで30秒ダイエット診断
+        <i className="ri-line-line text-2xl"></i>
+        LINEで無料相談・ダイエット診断
       </a>
-      <button
-        onClick={handleAgentClick}
-        className="inline-flex items-center gap-3 bg-teal-500 text-white font-bold px-10 py-6 rounded-full hover:bg-teal-600 transition-all duration-200 text-2xl shadow-2xl cursor-pointer whitespace-nowrap"
-        aria-label="AIでチャット相談"
-      >
-        <i className="ri-customer-service-2-line text-3xl"></i>
-        AIチャットで相談
-      </button>
     </div>
   );
 }
