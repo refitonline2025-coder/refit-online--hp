@@ -1,0 +1,67 @@
+
+export default function Footer() {
+  return (
+    <footer className="bg-white border-t border-gray-200 py-10">
+      <div className="px-4">
+        {/* リンク */}
+        <div className="flex flex-wrap justify-center gap-4 mb-6">
+          <a href="/" className="text-sm text-gray-600 hover:text-teal-700 transition-colors duration-200 whitespace-nowrap cursor-pointer">
+            ホーム
+          </a>
+          <a href="/#trainers" className="text-sm text-gray-600 hover:text-teal-700 transition-colors duration-200 whitespace-nowrap cursor-pointer">
+            トレーナー紹介
+          </a>
+          <a href="/#reviews" className="text-sm text-gray-600 hover:text-teal-700 transition-colors duration-200 whitespace-nowrap cursor-pointer">
+            ご利用者の声
+          </a>
+          <a href="/#pricing" className="text-sm text-gray-600 hover:text-teal-700 transition-colors duration-200 whitespace-nowrap cursor-pointer">
+            コースと料金
+          </a>
+        </div>
+
+        {/* SNSリンク */}
+        <div className="flex justify-center gap-4 mb-6">
+          <a
+            href="https://www.instagram.com/taishi_refit_online?igsh=bHlkaGI5eDQ1ODFz&utm_source=qr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 bg-teal-600 hover:bg-teal-700 rounded-full flex items-center justify-center transition-colors duration-200 cursor-pointer"
+          >
+            <i className="ri-instagram-line text-lg text-white"></i>
+          </a>
+          <a
+            href="https://lin.ee/F7dPZLD"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 bg-teal-600 hover:bg-teal-700 rounded-full flex items-center justify-center transition-colors duration-200 cursor-pointer"
+          >
+            <i className="ri-line-line text-lg text-white"></i>
+          </a>
+        </div>
+
+        {/* 下部リンク */}
+        <div className="border-t border-gray-200 pt-5">
+          <div className="flex flex-wrap justify-center gap-4 mb-3">
+            <a href="/terms" className="text-xs text-gray-500 hover:text-teal-700 transition-colors duration-200 whitespace-nowrap cursor-pointer">
+              注意事項・契約条件等
+            </a>
+            <a href="/#faq" className="text-xs text-gray-500 hover:text-teal-700 transition-colors duration-200 whitespace-nowrap cursor-pointer">
+              よくある質問
+            </a>
+            <a
+              href="https://readdy.ai/?ref=logo"
+              className="text-xs text-gray-500 hover:text-teal-700 transition-colors duration-200 whitespace-nowrap cursor-pointer"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Powered by Readdy
+            </a>
+          </div>
+          <p className="text-center text-xs text-gray-500">
+            Copyright © ReFit Online All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
