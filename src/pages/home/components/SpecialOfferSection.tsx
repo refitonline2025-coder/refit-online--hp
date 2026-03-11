@@ -9,7 +9,7 @@ export default function SpecialOfferSection() {
   }, []);
 
   return (
-    <section className="fade-in-up py-12 sm:py-16 md:py-20 bg-white">
+    <section className="fade-in-up py-12 sm:py-16 md:py-20 bg-[#FDF4F2]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* セクション見出し */}
         <div className="text-center mb-10 sm:mb-12">
@@ -24,7 +24,7 @@ export default function SpecialOfferSection() {
         </div>
 
         {/* 遺伝子検査キット訴求ブロック */}
-        <div className="bg-gradient-to-br from-[#FDF4F2] to-[#FAEAE6]/50 rounded-2xl p-6 sm:p-8 md:p-10 mb-8 border border-[#F0A898]">
+        <div className="bg-white rounded-2xl p-6 sm:p-8 md:p-10 mb-8 border border-[#FAE8E4]">
           <div className="grid md:grid-cols-2 gap-6 items-center">
             <div>
               <div className="flex items-start gap-3 mb-4">
@@ -85,7 +85,7 @@ export default function SpecialOfferSection() {
         </div>
 
         {/* スマートバンド訴求ブロック（強調） */}
-        <div className="bg-gradient-to-br from-gray-50 to-stone-100 rounded-2xl p-6 sm:p-8 md:p-10 mb-8 border border-stone-200 shadow-lg">
+        <div className="bg-white rounded-2xl p-6 sm:p-8 md:p-10 mb-8 border border-gray-200 shadow-sm">
           <div className="grid md:grid-cols-2 gap-6 items-center">
             {/* スマートバンド画像 */}
             <div className="flex justify-center order-2 md:order-1">
@@ -162,7 +162,7 @@ export default function SpecialOfferSection() {
         </div>
 
         {/* なぜ今だけなのか - 色味を最適化 */}
-        <div className="bg-gradient-to-br from-[#FDF4F2]0 to-[#D4604A] rounded-2xl p-6 sm:p-8 md:p-10 text-center">
+        <div className="bg-[#E8725A] rounded-2xl p-6 sm:p-8 md:p-10 text-center">
           <div className="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full mb-6">
             <i className="ri-gift-line text-white text-lg"></i>
             <span className="text-sm font-bold text-white">特別提供</span>

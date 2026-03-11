@@ -145,7 +145,7 @@ export default function PlanComparisonSection() {
   };
 
   return (
-    <section id="plans" className="fade-in-up py-16 bg-gradient-to-b from-white to-gray-50">
+    <section id="plans" className="fade-in-up py-16 bg-white">
       <div className="px-5">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -161,10 +161,10 @@ export default function PlanComparisonSection() {
               key={plan.name}
               className={`relative rounded-2xl overflow-hidden transition-all duration-300 ${
                 plan.popular
-                  ? 'shadow-2xl border-2 border-[#F0A898] md:scale-105 bg-white order-first md:order-none'
+                  ? 'shadow-lg border-2 border-[#F0A898] md:scale-105 bg-white order-first md:order-none'
                   : plan.premium
-                  ? 'shadow-xl border-2 border-orange-400 bg-white hover:shadow-2xl order-last md:order-none'
-                  : 'shadow-lg border border-gray-100 bg-white hover:shadow-xl order-2 md:order-none'
+                  ? 'shadow-md border-2 border-orange-400 bg-white hover:shadow-lg order-last md:order-none'
+                  : 'shadow-md border border-gray-100 bg-white hover:shadow-lg order-2 md:order-none'
               }`}
             >
               {plan.badge && (
@@ -185,7 +185,7 @@ export default function PlanComparisonSection() {
                 <div className="mb-6">
                   <div className="flex items-baseline gap-1 mb-1">
                     <span
-                      className={`text-5xl font-bold ${
+                      className={`text-4xl font-bold ${
                         plan.popular ? 'text-[#E8725A]' : plan.premium ? 'text-orange-500' : 'text-gray-800'
                       }`}
                     >
@@ -224,9 +224,9 @@ export default function PlanComparisonSection() {
                   rel="noopener noreferrer"
                   className={`block w-full text-center font-bold py-3.5 rounded-xl transition-all duration-300 whitespace-nowrap cursor-pointer text-sm ${
                     plan.popular
-                      ? 'bg-gradient-to-r from-[#E8725A] to-[#D4604A] text-white shadow-lg hover:from-[#FDF4F2]0 hover:to-[#D4604A] hover:shadow-xl'
+                      ? 'bg-[#E8725A] text-white shadow-md hover:bg-[#D4604A]'
                       : plan.premium
-                      ? 'bg-gradient-to-r from-orange-400 to-orange-500 text-white shadow-lg hover:from-orange-500 hover:to-orange-600 hover:shadow-xl'
+                      ? 'bg-orange-500 text-white shadow-md hover:bg-orange-600'
                       : 'bg-gray-900 text-white hover:bg-gray-700'
                   }`}
                 >
@@ -238,7 +238,7 @@ export default function PlanComparisonSection() {
         </div>
 
         {/* 比較表 */}
-        <div className="bg-white rounded-2xl shadow-md overflow-hidden mb-10 border border-gray-100 max-w-5xl mx-auto">
+        <div className="bg-white rounded-2xl shadow-sm overflow-hidden mb-10 border border-gray-200 max-w-5xl mx-auto">
           {/* ヘッダー */}
           <div className="grid grid-cols-4 border-b border-gray-200">
             <div className="px-6 py-5 bg-white" />

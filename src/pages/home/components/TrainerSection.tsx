@@ -79,7 +79,7 @@ export default function TrainerSection() {
   };
 
   return (
-    <section id="trainers" className="fade-in-up py-16 bg-gradient-to-b from-white via-[#FDF4F2]/30 to-white overflow-hidden">
+    <section id="trainers" className="fade-in-up py-16 bg-white overflow-hidden">
       <div className="px-5">
         {/* ダイエットコンシェルジュ紹介 */}
         <div>
